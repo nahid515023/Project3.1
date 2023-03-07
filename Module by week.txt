@@ -28,7 +28,7 @@ Week 7-8: Back-end Development
 
 Develop the server-side scripts and database structures
 Implement user authentication and authorization
-Create APIs for third-party integrations
+Create APIs for third-party integrations { Extra work for API (if we get time) }
 
 ```````````````````````````
 Week 9-10: Testing and QA
