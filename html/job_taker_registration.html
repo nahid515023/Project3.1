@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Page</title>
+    <title>Job Taker Registration Page</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="reg.css">
+    <link rel="stylesheet" href="../css/reg.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
     <script src="../js/script.js" type="text/javascript"></script>
-
 </head>
 
 <body class="body">
@@ -19,13 +18,8 @@
             <div class="col-md-6 col-sm-8">
                 <div class="card shadow-lg">
                     <div class="card-body">
-                        <h1 class="text-center mb-4">Registration</h1>
-                        <div class="text-center">
-                            <button id="job-poster-btn" type="button" class="btn btn-outline-secondary me-3">Job
-                                Poster</button>
-                            <button id="job-taker-btn" type="button" class="btn btn-outline-secondary">Job
-                                Taker</button>
-                        </div>
+                        <h1 class="text-center mb-4">Job Taker</br>Registration</h1>
+
 
                         <hr class="mb-5">
                         <form>
@@ -48,6 +42,18 @@
                                 <input type="email" class="form-control" id="email" required>
                             </div>
                             <div class="mb-3">
+                                <label for="NID" class="form-label">NID Number</label>
+                                <input type="number" class="form-control" id="nid_number" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="NID" class="form-label">Trade Licence No.</label>
+                                <input type="number" class="form-control" id="nid_number" required>
+                            </div>
+                            <div class="card-body mb-3">
+                                <label for="exampleFormControlFile1">Trade Licence Scanned Copy</label>
+                                <input type="file" class="form-control-file" id="trade_Licence">
+                            </div>
+                            <div class="mb-3">
                                 <label for="dob" class="form-label">Date of Birth</label>
                                 <input type="date" class="form-control" id="dob" required>
                             </div>
@@ -65,24 +71,7 @@
                                     <input type="password" class="form-control" id="confirm-password" required>
                                 </div>
                             </div>
-                            <div class="mb-3">
-                                <label for="gender" class="form-label">Gender</label>
-                                <div>
-                                    <input type="radio" class="form-check-input" name="gender" id="male" value="male"
-                                        required>
-                                    <label for="male" class="form-check-label">Male</label>
-                                </div>
-                                <div>
-                                    <input type="radio" class="form-check-input" name="gender" id="female"
-                                        value="female" required>
-                                    <label for="female" class="form-check-label">Female</label>
-                                </div>
-                                <div>
-                                    <input type="radio" class="form-check-input" name="gender" id="other" value="other"
-                                        required>
-                                    <label for="other" class="form-check-label">Other</label>
-                                </div>
-                            </div>
+
                             <div class="text-center d-grid me-5 mt-5 ms-5">
                                 <button type="submit" class="btn btn-primary btn-block mb-5 gap-5">Register</button>
                             </div>

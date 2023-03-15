@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Page</title>
+    <title>Job poster Registration Page</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="reg.css">
+    <link rel="stylesheet" href="../css/reg.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
     <script src="../js/script.js" type="text/javascript"></script>
@@ -19,13 +19,8 @@
             <div class="col-md-6 col-sm-8">
                 <div class="card shadow-lg">
                     <div class="card-body">
-                        <h1 class="text-center mb-4">Registration</h1>
-                        <div class="text-center">
-                            <button id="job-poster-btn" type="button" class="btn btn-outline-secondary me-3">Job
-                                Poster</button>
-                            <button id="job-taker-btn" type="button" class="btn btn-outline-secondary">Job
-                                Taker</button>
-                        </div>
+                        <h1 class="text-center mb-4">Job Poster</br>Registration</h1>
+
 
                         <hr class="mb-5">
                         <form>
@@ -46,6 +41,10 @@
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
                                 <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="NID" class="form-label">NID Number</label>
+                                <input type="number" class="form-control" id="nid_number" required>
                             </div>
                             <div class="mb-3">
                                 <label for="dob" class="form-label">Date of Birth</label>

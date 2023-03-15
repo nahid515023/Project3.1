@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bidder Newsfeed</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../css/newsfeed.css"> 
+    <link rel="stylesheet" href="../css/newsfeed.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
@@ -36,10 +39,11 @@
                 </ul>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">icon<i class="bi bi-bell"></i></a>
+                        <a class="nav-link pe-3" href="#"><i class="material-icons"
+                                style="font-size:25px">notifications</i></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Log out <i class="bi bi-caret-down-fill"></i></a>
+                        <a class="nav-link pe-3" href="./logIn.html"><i class="fa fa-sign-out" style="font-size:25px"></i></a>
                     </li>
                 </ul>
             </div>
@@ -52,7 +56,7 @@
             <div class="col-md-7">
 
                 <!-- Post 1 -->
-                <div class="card mt-4 shadow">
+                <div class="card mt-5 shadow">
                     <div class="card-body">
                         <div class="d-flex align-items-center ms-4">
                             <img src="https://picsum.photos/50/50" class="rounded-circle me-3" alt="profile picture">
@@ -98,7 +102,62 @@
                                     eleifend neque vitae faucibus bibendum.</p>
                             </div>
                             <div class="rounded col-md-9">
-                                <img src="https://picsum.photos/600/400" class="img-fluid rounded-3 mt-3" alt="random image">
+                                <img src="https://picsum.photos/600/400" class="img-fluid rounded-3 mt-3"
+                                    alt="random image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mb-4 mt-4 text-center">
+                        <a class="btn btn-outline-primary me-3 ps-5 pe-5" href="#" role="button">Bid</a>
+                        <button class="btn btn-outline-danger ps-4 pe-4" type="submit">Remove</button>
+                    </div>
+                </div>
+                <div class="card mt-4 shadow">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center ms-4">
+                            <img src="https://picsum.photos/50/50" class="rounded-circle me-3" alt="profile picture">
+                            <div class="m-0">
+                                <h5 class="card-title mb-0">Jane Doe</h5>
+                                <a href="#" class="text-muted">@refrigerator_repair</a>
+                                <h6 class="card-subtitle mb-2 mt-1 text-muted">5 hours ago</h6>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-9">
+                                <p class="card-text">Donec interdum lacus sed velit fermentum, in commodo enim lacinia.
+                                    Proin
+                                    eleifend neque vitae faucibus bibendum.</p>
+                            </div>
+                            <div class="rounded col-md-9">
+                                <img src="https://picsum.photos/600/400" class="img-fluid rounded-3 mt-3"
+                                    alt="random image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mb-4 mt-4 text-center">
+                        <a class="btn btn-outline-primary me-3 ps-5 pe-5" href="#" role="button">Bid</a>
+                        <button class="btn btn-outline-danger ps-4 pe-4" type="submit">Remove</button>
+                    </div>
+                </div>
+                <div class="card mt-4 shadow">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center ms-4">
+                            <img src="https://picsum.photos/50/50" class="rounded-circle me-3" alt="profile picture">
+                            <div class="m-0">
+                                <h5 class="card-title mb-0">Jane Doe</h5>
+                                <a href="#" class="text-muted">@refrigerator_repair</a>
+                                <h6 class="card-subtitle mb-2 mt-1 text-muted">5 hours ago</h6>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-9">
+                                <p class="card-text">Donec interdum lacus sed velit fermentum, in commodo enim lacinia.
+                                    Proin
+                                    eleifend neque vitae faucibus bibendum.</p>
+                            </div>
+                            <div class="rounded col-md-9">
+                                <img src="https://picsum.photos/600/400" class="img-fluid rounded-3 mt-3"
+                                    alt="random image">
                             </div>
                         </div>
                     </div>
@@ -125,7 +184,8 @@
                                     eleifend neque vitae faucibus bibendum.</p>
                             </div>
                             <div class="rounded col-md-9">
-                                <img src="https://picsum.photos/600/400" class="img-fluid rounded-3 mt-3" alt="random image">
+                                <img src="https://picsum.photos/600/400" class="img-fluid rounded-3 mt-3"
+                                    alt="random image">
                             </div>
                         </div>
                     </div>
@@ -138,6 +198,41 @@
             </div>
         </div>
     </div>
+
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <!-- <div class="container p-4 pb-0"> -->
+            <!-- Section: Social media -->
+            <!-- <section class="mb-4"> -->
+                <!-- Facebook -->
+                <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa-brands fa-facebook"></i></a> -->
+
+                <!-- Twitter -->
+                <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a> -->
+
+                <!-- Google -->
+                <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a> -->
+
+                <!-- Instagram -->
+                <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a> -->
+
+                <!-- Linkedin -->
+                <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a> -->
+
+                <!-- Github -->
+                <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a> -->
+            <!-- </section> -->
+            <!-- Section: Social media -->
+        <!-- </div> -->
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">giglink.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
