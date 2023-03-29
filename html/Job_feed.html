@@ -63,6 +63,12 @@
                             <li><a class="dropdown-item" href="Job_feed.html">Car Repair</a></li>
                         </ul>
                     </li>
+                    
+                    <li class="nav-item position-absolute me-1 mt-2" style="right: 8%;">
+                        <i class="fa-solid fa-location-dot text-white"></i>
+                        <p class="text-white fw-bold d-inline-block">Mohammadpur</p>
+                    </li>
+
                     <li class="nav-item position-absolute me-4" style="right: 6%;">
                         <a class="nav-item mt-1 position-absolute" href="#">
                             <button type="button" class="btn position-relative" >
@@ -113,17 +119,19 @@
                 <div class="card mt-4 data-bs-toggle=" modal" data-bs-target="#exampleModal">
                     <div class="card-body">
                         <div class="d-flex align-items-center">
-                            <img src="https://picsum.photos/50/50" class="rounded-circle me-2" alt="profile picture">
-                            <div class="text-gray">
+                            <img src="https://picsum.photos/50/51" class="rounded-circle me-2 mt-0" alt="profile picture">
+                            <div class="text-gray" style="line-height:1em">
                                 <h5 class="card-title mb-0">Jane Doe</h5>
-                                <a href="#" class="text-muted"><small>@refrigerator_repair</small></a>
-                                <p class="card-subtitle mb-2 mt-1 text-muted"><small>Posted 5 hours ago</small></p>
+                                <a href="#" class="text-muted d-block"><small>@refrigerator_repair</small></a>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p class="card-subtitle mb-2 mt-1 text-muted d-inline-block"><small>Wari</small></p>
+                                <p class="card-subtitle mb-2 text-muted"><small>Posted 5 hours ago</small></p>
                             </div>
                         </div>
                         <a href="#" class="text-decoration-none" style="color:rgba(0, 0, 0, 0.738);"
                             data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <div class="m-3">
-                                <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
+                            <div class="mx-3">
+                                <h4 class="card-title text-center">Lorem ipsum dolor sit amet</h4>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
                                     ipsam eos, dolorum, perspiciatis modi et corrupti vel assumenda repellendus sit
                                     impedit molestiae eligendi inventore nesciunt magni? Fugit blanditiis, recusandae
@@ -140,7 +148,7 @@
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header mx-3">
-                                <h5 class="modal-title" id="exampleModalLabel">Lorem ipsum dolor sit amet</h5>
+                                <h5 class="modal-title " id="exampleModalLabel">Lorem ipsum dolor sit amet</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
@@ -162,6 +170,38 @@
                         </div>
                     </div>
                 </div>
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open modal for @mdo</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Open modal for @fat</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+                
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                          </div>
+                          <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Send message</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <div class="card mt-4 data-bs-toggle=" modal" data-bs-target="#exampleModal">
                     <div class="card-body">
                         <div class="d-flex align-items-center">
