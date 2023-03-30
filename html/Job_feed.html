@@ -11,25 +11,6 @@
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Jobs</title>
-    <style>
-        .btn:hover {
-            color: #fff;
-        }
-
-        .input-text:focus {
-            box-shadow: 0px 0px 0px;
-            border-color: #f8c146;
-            outline: 0px;
-        }
-
-        .form-control {
-            border: 1px solid #f8c146;
-        }
-
-        .profile-post {
-            color: aquamarine;
-        }
-    </style>
 </head>
 
 <body>
@@ -63,7 +44,7 @@
                             <li><a class="dropdown-item" href="Job_feed.html">Car Repair</a></li>
                         </ul>
                     </li>
-                    
+
                     <li class="nav-item position-absolute me-1 mt-2" style="right: 8%;">
                         <i class="fa-solid fa-location-dot text-white"></i>
                         <p class="text-white fw-bold d-inline-block">Mohammadpur</p>
@@ -71,7 +52,7 @@
 
                     <li class="nav-item position-absolute me-4" style="right: 6%;">
                         <a class="nav-item mt-1 position-absolute" href="#">
-                            <button type="button" class="btn position-relative" >
+                            <button type="button" class="btn position-relative">
                                 <i class="fa-solid fa-bell text-white" style="font-size: 20px;"></i>
                                 <span
                                     class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
@@ -105,8 +86,8 @@
                     </div>
                 </div>
                 <div class="dropdown d-block text-end">
-                    <button class="btn fw-bold bg-dark text-white dropdown-toggle" type="button"
-                        style="" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn fw-bold bg-dark text-white dropdown-toggle" type="button" style=""
+                        data-bs-toggle="dropdown" aria-expanded="false">
                         Sort
                     </button>
                     <ul class="dropdown-menu">
@@ -115,17 +96,20 @@
                     </ul>
                 </div>
 
+                <!-- For a post -->
 
                 <div class="card mt-4 data-bs-toggle=" modal" data-bs-target="#exampleModal">
                     <div class="card-body">
                         <div class="d-flex align-items-center">
-                            <img src="https://picsum.photos/50/51" class="rounded-circle me-2 mt-0" alt="profile picture">
+                            <img src="https://picsum.photos/50/51" class="rounded-circle me-2 mt-0"
+                                alt="profile picture">
                             <div class="text-gray" style="line-height:1em">
                                 <h5 class="card-title mb-0">Jane Doe</h5>
-                                <a href="#" class="text-muted d-block"><small>@refrigerator_repair</small></a>
+                                <a href="#" class="text-muted d-block text-decoration-none"><small>Refrigerator repair</small></a>
                                 <i class="fa-solid fa-location-dot"></i>
-                                <p class="card-subtitle mb-2 mt-1 text-muted d-inline-block"><small>Wari</small></p>
-                                <p class="card-subtitle mb-2 text-muted"><small>Posted 5 hours ago</small></p>
+                                <p class="card-subtitle mb-2 mt-1 text-muted d-inline-block"><small>Wari,Dhaka</small></p>
+                                <i class="fa-solid fa-clock"></i>
+                                <p class="card-subtitle mb-2 text-muted d-inline-block"><small>Posted 5 hours ago</small></p>
                             </div>
                         </div>
                         <a href="#" class="text-decoration-none" style="color:rgba(0, 0, 0, 0.738);"
@@ -142,80 +126,25 @@
                         </a>
                     </div>
                 </div>
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header mx-3">
-                                <h5 class="modal-title " id="exampleModalLabel">Lorem ipsum dolor sit amet</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body mx-3">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, maiores ipsa quam
-                                accusamus explicabo voluptas odit alias pariatur, nobis distinctio facere quasi
-                                doloribus voluptatibus repudiandae porro ipsum tenetur aliquid omnis qui laudantium
-                                ipsam quo quod! Pariatur nesciunt, est commodi voluptatem aut iste veniam illo
-                                repellendus quia at ullam enim dignissimos!
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed porro, at quia dicta natus
-                                voluptatum similique fugiat blanditiis nemo animi nam, veritatis totam voluptate, ab quo
-                                voluptatem. Explicabo ipsum modi vitae assumenda beatae. Error dolorum commodi in vel.
-                                Unde delectus doloremque beatae esse! Minus nostrum tempore quas soluta rem eius?
-                            </div>
-                            <div class="modal-footer d-block  text-center ">
-                                <button type="button" class="btn btn-primary w-25" data-bs-dismiss="modal"
-                                    aria-label="Close">Bid</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open modal for @mdo</button>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Open modal for @fat</button>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
-                
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <form>
-                          <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">Recipient:</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                          </div>
-                          <div class="mb-3">
-                            <label for="message-text" class="col-form-label">Message:</label>
-                            <textarea class="form-control" id="message-text"></textarea>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Send message</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
                 <div class="card mt-4 data-bs-toggle=" modal" data-bs-target="#exampleModal">
                     <div class="card-body">
                         <div class="d-flex align-items-center">
-                            <img src="https://picsum.photos/50/50" class="rounded-circle me-2" alt="profile picture">
-                            <div class="text-gray">
+                            <img src="https://picsum.photos/50/51" class="rounded-circle me-2 mt-0"
+                                alt="profile picture">
+                            <div class="text-gray" style="line-height:1em">
                                 <h5 class="card-title mb-0">Jane Doe</h5>
-                                <a href="#" class="text-muted"><small>@refrigerator_repair</small></a>
-                                <p class="card-subtitle mb-2 mt-1 text-muted"><small>Posted 5 hours ago</small></p>
+                                <a href="#" class="text-muted d-block text-decoration-none"><small>Refrigerator repair</small></a>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p class="card-subtitle mb-2 mt-1 text-muted d-inline-block"><small>Wari,Dhaka</small></p>
+                                <i class="fa-solid fa-clock"></i>
+                                <p class="card-subtitle mb-2 text-muted d-inline-block"><small>Posted 5 hours ago</small></p>
                             </div>
                         </div>
                         <a href="#" class="text-decoration-none" style="color:rgba(0, 0, 0, 0.738);"
                             data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <div class="m-3">
-                                <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
+                            <div class="mx-3">
+                                <h4 class="card-title text-center">Lorem ipsum dolor sit amet</h4>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
                                     ipsam eos, dolorum, perspiciatis modi et corrupti vel assumenda repellendus sit
                                     impedit molestiae eligendi inventore nesciunt magni? Fugit blanditiis, recusandae
@@ -226,48 +155,25 @@
                         </a>
                     </div>
                 </div>
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header mx-3">
-                                <h5 class="modal-title " id="exampleModalLabel">Lorem ipsum dolor sit amet</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body mx-3">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, maiores ipsa quam
-                                accusamus explicabo voluptas odit alias pariatur, nobis distinctio facere quasi
-                                doloribus voluptatibus repudiandae porro ipsum tenetur aliquid omnis qui laudantium
-                                ipsam quo quod! Pariatur nesciunt, est commodi voluptatem aut iste veniam illo
-                                repellendus quia at ullam enim dignissimos!
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed porro, at quia dicta natus
-                                voluptatum similique fugiat blanditiis nemo animi nam, veritatis totam voluptate, ab quo
-                                voluptatem. Explicabo ipsum modi vitae assumenda beatae. Error dolorum commodi in vel.
-                                Unde delectus doloremque beatae esse! Minus nostrum tempore quas soluta rem eius?
-                            </div>
-                            <div class="modal-footer d-block  text-center ">
-                                <button type="button" class="btn btn-primary w-25" data-bs-dismiss="modal"
-                                    aria-label="Close">Bid</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
                 <div class="card mt-4 data-bs-toggle=" modal" data-bs-target="#exampleModal">
                     <div class="card-body">
                         <div class="d-flex align-items-center">
-                            <img src="https://picsum.photos/50/50" class="rounded-circle me-2" alt="profile picture">
-                            <div class="text-gray">
+                            <img src="https://picsum.photos/50/51" class="rounded-circle me-2 mt-0"
+                                alt="profile picture">
+                            <div class="text-gray" style="line-height:1em">
                                 <h5 class="card-title mb-0">Jane Doe</h5>
-                                <a href="#" class="text-muted"><small>@refrigerator_repair</small></a>
-                                <p class="card-subtitle mb-2 mt-1 text-muted"><small>Posted 5 hours ago</small></p>
+                                <a href="#" class="text-muted d-block text-decoration-none"><small>Refrigerator repair</small></a>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p class="card-subtitle mb-2 mt-1 text-muted d-inline-block"><small>Wari,Dhaka</small></p>
+                                <i class="fa-solid fa-clock"></i>
+                                <p class="card-subtitle mb-2 text-muted d-inline-block"><small>Posted 5 hours ago</small></p>
                             </div>
                         </div>
                         <a href="#" class="text-decoration-none" style="color:rgba(0, 0, 0, 0.738);"
                             data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <div class="m-3">
-                                <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
+                            <div class="mx-3">
+                                <h4 class="card-title text-center">Lorem ipsum dolor sit amet</h4>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
                                     ipsam eos, dolorum, perspiciatis modi et corrupti vel assumenda repellendus sit
                                     impedit molestiae eligendi inventore nesciunt magni? Fugit blanditiis, recusandae
@@ -276,106 +182,202 @@
                                 </p>
                             </div>
                         </a>
-                    </div>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header mx-3">
-                                <h5 class="modal-title " id="exampleModalLabel">Lorem ipsum dolor sit amet</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body mx-3">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, maiores ipsa quam
-                                accusamus explicabo voluptas odit alias pariatur, nobis distinctio facere quasi
-                                doloribus voluptatibus repudiandae porro ipsum tenetur aliquid omnis qui laudantium
-                                ipsam quo quod! Pariatur nesciunt, est commodi voluptatem aut iste veniam illo
-                                repellendus quia at ullam enim dignissimos!
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed porro, at quia dicta natus
-                                voluptatum similique fugiat blanditiis nemo animi nam, veritatis totam voluptate, ab quo
-                                voluptatem. Explicabo ipsum modi vitae assumenda beatae. Error dolorum commodi in vel.
-                                Unde delectus doloremque beatae esse! Minus nostrum tempore quas soluta rem eius?
-                            </div>
-                            <div class="modal-footer d-block  text-center ">
-                                <button type="button" class="btn btn-primary w-25" data-bs-dismiss="modal"
-                                    aria-label="Close">Bid</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mt-4 data-bs-toggle=" modal" data-bs-target="#exampleModal">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center">
-                            <img src="https://picsum.photos/50/50" class="rounded-circle me-2" alt="profile picture">
-                            <div class="text-gray">
-                                <h5 class="card-title mb-0">Jane Doe</h5>
-                                <a href="#" class="text-muted"><small>@refrigerator_repair</small></a>
-                                <p class="card-subtitle mb-2 mt-1 text-muted"><small>Posted 5 hours ago</small></p>
-                            </div>
-                        </div>
-                        <a href="#" class="text-decoration-none" style="color:rgba(0, 0, 0, 0.738);"
-                            data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <div class="m-3">
-                                <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-                                    ipsam eos, dolorum, perspiciatis modi et corrupti vel assumenda repellendus sit
-                                    impedit molestiae eligendi inventore nesciunt magni? Fugit blanditiis, recusandae
-                                    eum atque provident laboriosam impedit pariatur sapiente debitis magni deleniti
-                                    minima.
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header mx-3">
-                                <h5 class="modal-title " id="exampleModalLabel">Lorem ipsum dolor sit amet</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body mx-3">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, maiores ipsa quam
-                                accusamus explicabo voluptas odit alias pariatur, nobis distinctio facere quasi
-                                doloribus voluptatibus repudiandae porro ipsum tenetur aliquid omnis qui laudantium
-                                ipsam quo quod! Pariatur nesciunt, est commodi voluptatem aut iste veniam illo
-                                repellendus quia at ullam enim dignissimos!
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed porro, at quia dicta natus
-                                voluptatum similique fugiat blanditiis nemo animi nam, veritatis totam voluptate, ab quo
-                                voluptatem. Explicabo ipsum modi vitae assumenda beatae. Error dolorum commodi in vel.
-                                Unde delectus doloremque beatae esse! Minus nostrum tempore quas soluta rem eius?
-                            </div>
-                            <div class="modal-footer d-block  text-center ">
-                                <button type="button" class="btn btn-primary w-25" data-bs-dismiss="modal"
-                                    aria-label="Close">Bid</button>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
-                <!-- pagination -->
-                <nav aria-label="Page navigation example" class="my-4">
+                <div class="card mt-4 data-bs-toggle=" modal" data-bs-target="#exampleModal">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <img src="https://picsum.photos/50/51" class="rounded-circle me-2 mt-0"
+                                alt="profile picture">
+                            <div class="text-gray" style="line-height:1em">
+                                <h5 class="card-title mb-0">Jane Doe</h5>
+                                <a href="#" class="text-muted d-block text-decoration-none"><small>Refrigerator repair</small></a>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p class="card-subtitle mb-2 mt-1 text-muted d-inline-block"><small>Wari,Dhaka</small></p>
+                                <i class="fa-solid fa-clock"></i>
+                                <p class="card-subtitle mb-2 text-muted d-inline-block"><small>Posted 5 hours ago</small></p>
+                            </div>
+                        </div>
+                        <a href="#" class="text-decoration-none" style="color:rgba(0, 0, 0, 0.738);"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="mx-3">
+                                <h4 class="card-title text-center">Lorem ipsum dolor sit amet</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                                    ipsam eos, dolorum, perspiciatis modi et corrupti vel assumenda repellendus sit
+                                    impedit molestiae eligendi inventore nesciunt magni? Fugit blanditiis, recusandae
+                                    eum atque provident laboriosam impedit pariatur sapiente debitis magni deleniti
+                                    minima.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card mt-4 data-bs-toggle=" modal" data-bs-target="#exampleModal">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <img src="https://picsum.photos/50/51" class="rounded-circle me-2 mt-0"
+                                alt="profile picture">
+                            <div class="text-gray" style="line-height:1em">
+                                <h5 class="card-title mb-0">Jane Doe</h5>
+                                <a href="#" class="text-muted d-block text-decoration-none"><small>Refrigerator repair</small></a>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p class="card-subtitle mb-2 mt-1 text-muted d-inline-block"><small>Wari,Dhaka</small></p>
+                                <i class="fa-solid fa-clock"></i>
+                                <p class="card-subtitle mb-2 text-muted d-inline-block"><small>Posted 5 hours ago</small></p>
+                            </div>
+                        </div>
+                        <a href="#" class="text-decoration-none" style="color:rgba(0, 0, 0, 0.738);"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="mx-3">
+                                <h4 class="card-title text-center">Lorem ipsum dolor sit amet</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                                    ipsam eos, dolorum, perspiciatis modi et corrupti vel assumenda repellendus sit
+                                    impedit molestiae eligendi inventore nesciunt magni? Fugit blanditiis, recusandae
+                                    eum atque provident laboriosam impedit pariatur sapiente debitis magni deleniti
+                                    minima.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card mt-4 data-bs-toggle=" modal" data-bs-target="#exampleModal">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <img src="https://picsum.photos/50/51" class="rounded-circle me-2 mt-0"
+                                alt="profile picture">
+                            <div class="text-gray" style="line-height:1em">
+                                <h5 class="card-title mb-0">Jane Doe</h5>
+                                <a href="#" class="text-muted d-block text-decoration-none"><small>Refrigerator repair</small></a>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p class="card-subtitle mb-2 mt-1 text-muted d-inline-block"><small>Wari,Dhaka</small></p>
+                                <i class="fa-solid fa-clock"></i>
+                                <p class="card-subtitle mb-2 text-muted d-inline-block"><small>Posted 5 hours ago</small></p>
+                            </div>
+                        </div>
+                        <a href="#" class="text-decoration-none" style="color:rgba(0, 0, 0, 0.738);"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="mx-3">
+                                <h4 class="card-title text-center">Lorem ipsum dolor sit amet</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                                    ipsam eos, dolorum, perspiciatis modi et corrupti vel assumenda repellendus sit
+                                    impedit molestiae eligendi inventore nesciunt magni? Fugit blanditiis, recusandae
+                                    eum atque provident laboriosam impedit pariatur sapiente debitis magni deleniti
+                                    minima.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card my-4 data-bs-toggle=" modal" data-bs-target="#exampleModal">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <img src="https://picsum.photos/50/51" class="rounded-circle me-2 mt-0"
+                                alt="profile picture">
+                            <div class="text-gray" style="line-height:1em">
+                                <h5 class="card-title mb-0">Jane Doe</h5>
+                                <a href="#" class="text-muted d-block text-decoration-none"><small>Refrigerator repair</small></a>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p class="card-subtitle mb-2 mt-1 text-muted d-inline-block"><small>Wari,Dhaka</small></p>
+                                <i class="fa-solid fa-clock"></i>
+                                <p class="card-subtitle mb-2 text-muted d-inline-block"><small>Posted 5 hours ago</small></p>
+                            </div>
+                        </div>
+                        <a href="#" class="text-decoration-none" style="color:rgba(0, 0, 0, 0.738);"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <div class="mx-3">
+                                <h4 class="card-title text-center">Lorem ipsum dolor sit amet</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                                    ipsam eos, dolorum, perspiciatis modi et corrupti vel assumenda repellendus sit
+                                    impedit molestiae eligendi inventore nesciunt magni? Fugit blanditiis, recusandae
+                                    eum atque provident laboriosam impedit pariatur sapiente debitis magni deleniti
+                                    minima.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <nav aria-label="Page navigation example">
                     <ul class="pagination justify-content-center">
-                        <li class="page-item disabled">
-                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">Next</a>
-                        </li>
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
                     </ul>
-                </nav>
+                  </nav>
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header mx-3">
+                                <h5 class="modal-title " id="exampleModalLabel">Lorem ipsum dolor sit amet</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body mx-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, maiores ipsa quam
+                                accusamus explicabo voluptas odit alias pariatur, nobis distinctio facere quasi
+                                doloribus voluptatibus repudiandae porro ipsum tenetur aliquid omnis qui laudantium
+                                ipsam quo quod! Pariatur nesciunt, est commodi voluptatem aut iste veniam illo
+                                repellendus quia at ullam enim dignissimos!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed porro, at quia dicta natus
+                                voluptatum similique fugiat blanditiis nemo animi nam, veritatis totam voluptate, ab quo
+                                voluptatem. Explicabo ipsum modi vitae assumenda beatae. Error dolorum commodi in vel.
+                                Unde delectus doloremque beatae esse! Minus nostrum tempore quas soluta rem eius?
+                            </div>
+                            <div class="modal-footer d-block  text-center ">
+                                <button type="button" class="btn btn-primary w-25" data-bs-toggle="modal"
+                                    data-bs-target="#Bid" data-bs-whatever="@getbootstrap"
+                                    aria-label="Close">Bid</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="Bid" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Message:</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="bid-amount" class="col-form-label">Bid Amount:</label>
+                                        <input type="text" class="form-control" id="bid-amount">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
+
 
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-dark text-muted">
