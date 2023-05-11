@@ -1,0 +1,74 @@
+.postbox {
+    margin-top: 8px;
+    width: 850px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .postbox-category {
+    margin-bottom: 10px;
+  }
+  
+  .postbox-category label {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+  }
+  
+  .postbox-category select {
+    width: 200px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+  
+  .postbox-text {
+    margin-bottom: 10px;
+  }
+  
+  .postbox-text label {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+  }
+  
+  .postbox-text textarea {
+    width: 100%;
+    height: 150px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+  
+  .postbox-location {
+    margin-bottom: 10px;
+  }
+  
+  .postbox-location label {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+  }
+  
+  .postbox-location input {
+    width: 200px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+  
+  #submit-post {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  #submit-post:hover {
+    background-color: #0062cc;
+  }
+  

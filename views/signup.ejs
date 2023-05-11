@@ -7,15 +7,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
-    <style>
-        .registration-form {
-            display: none;
-        }
-
-        body {
-            background-color: #9A616D;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/regi.css">
 </head>
 
 <body>
@@ -29,51 +21,50 @@
             </div>
         </div>
         <div class="row m t-5">
-            <div class="col-md-8 my-5 p-5 mx-auto " style="background-color:white;border-radius: 2rem;">
-                <form class="registration-form" id="jp-form">
-                    <!-- Customer registration form -->
-                    <div class="mb-5 text-center">
+            <div class="col-md-8 my-3 p-5 mx-auto " style="background-color:white;border-radius: 2rem;">
+                <form class="registration-form" id="jp-form" action="/signup/jobPoster" method="POST">
+                    <div class="mb-4 text-center">
                         <h3>Register as a Job poster</h3>
                         <hr />
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="first-name" class="form-label">First Name</label>
-                            <input type="text" class="form-control" id="first-name" required>
+                            <input type="text" class="form-control" id="first-name" name="firstname" required>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="last-name" class="form-label">Last Name</label>
-                            <input type="text" class="form-control" id="last-name" required>
+                            <input type="text" class="form-control" id="last-name" name="lastname" required>
                         </div>
                     </div>
                     <div class="mb-3">
                         <label for="phone-number" class="form-label">Phone Number</label>
-                        <input type="tel" class="form-control" id="phone-number" required>
+                        <input type="tel" class="form-control" id="phone-number" name="phone" required>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" required>
+                        <input type="email" class="form-control" id="email" name="email" required>
                     </div>
                     <div class="mb-3">
                         <label for="NID" class="form-label">NID Number</label>
-                        <input type="number" class="form-control" id="nid_number" required>
+                        <input type="number" class="form-control" id="nid_number" name="nid" required>
                     </div>
                     <div class="mb-3">
                         <label for="dob" class="form-label">Date of Birth</label>
-                        <input type="date" class="form-control" id="dob" required>
+                        <input type="date" class="form-control" id="dob" name="dob" required>
                     </div>
                     <div class="mb-3">
                         <label for="present-address" class="form-label">Present Address</label>
-                        <textarea class="form-control" id="present-address" rows="3" required></textarea>
+                        <textarea class="form-control" id="present-address" rows="1" name="address" required></textarea>
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password" required>
+                            <input type="password" class="form-control" id="password" name="password" required>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="confirm-password" class="form-label">Confirm Password</label>
-                            <input type="password" class="form-control" id="confirm-password" required>
+                            <input type="password" class="form-control" id="confirm-password" name="confirm" required>
                         </div>
                     </div>
                     <div class="mb-3">
@@ -93,13 +84,24 @@
                             <label for="other" class="form-check-label">Other</label>
                         </div>
                     </div>
-                    <div class="text-center d-grid me-5 mt-5 ms-5">
-                        <button type="submit" class="btn btn-primary btn-block mb-5 gap-5">Register</button>
-                    </div>
-                    <!-- Form fields -->
+
+                    <% if (msg) { %>
+                        <div class="alert alert-danger" role="alert">
+                            <%= msg %>
+                        </div>
+                        <% } %>
+
+                            <div class="text-center d-grid me-5 mt-5 ms-5">
+                                <button type="submit" class="btn btn-primary btn-block mb-5 gap-5">Register</button>
+                            </div>
+                            <!-- Form fields -->
                 </form>
-                <form class="registration-form" id="jt-form">
-                    <div class="mb-5 text-center">
+
+
+
+                <form class="registration-form" id="jt-form" action="/signup/jobTaker" method="POST"
+                    enctype="multipart/form-data">
+                    <div class="mb-4 text-center">
                         <h3>Register as a Job Taker</h3>
                         <hr />
                     </div>
@@ -107,63 +109,84 @@
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="first-name" class="form-label">First Name</label>
-                            <input type="text" class="form-control" id="first-name" required>
+                            <input type="text" class="form-control" id="first-name" name="firstname" required>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="last-name" class="form-label">Last Name</label>
-                            <input type="text" class="form-control" id="last-name" required>
+                            <input type="text" class="form-control" id="last-name" name="lastname" required>
                         </div>
                     </div>
                     <div class="mb-3">
                         <label for="phone-number" class="form-label">Phone Number</label>
-                        <input type="tel" class="form-control" id="phone-number" required>
+                        <input type="tel" class="form-control" id="phone-number" name="phone" required>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" required>
+                        <input type="email" class="form-control" id="email" name="email" required>
                     </div>
                     <div class="mb-3">
                         <label for="NID" class="form-label">NID Number</label>
-                        <input type="number" class="form-control" id="nid_number" required>
+                        <input type="number" class="form-control" id="nid_number" name="nid" required>
                     </div>
 
                     <div class="mb-3">
                         <label for="dob" class="form-label">Date of Birth</label>
-                        <input type="date" class="form-control" id="dob" required>
+                        <input type="date" class="form-control" id="dob" name="dob" required>
                     </div>
                     <div class="mb-3">
                         <label for="present-address" class="form-label">Present Address</label>
-                        <textarea class="form-control" id="present-address" rows="3" required></textarea>
+                        <textarea class="form-control" id="present-address" rows="1" name="address" required></textarea>
                     </div>
                     <div class="mb-3">
-                        <label for="NID" class="form-label">Trade Licence No.</label>
-                        <input type="number" class="form-control" id="nid_number" required>
+                        <label for="tl_number" class="form-label">Trade Licence No.</label>
+                        <input type="number" class="form-control" id="tl_number" name="tln" required>
                     </div>
                     <div class="card-body mb-3">
-                        <label for="exampleFormControlFile1">Trade Licence Scanned Copy</label>
+                        <label for="trade_Licence">Trade Licence Scanned Copy</label>
                         </br>
-                        <input type="file" class="form-control-file mt-4" id="trade_Licence">
+                        <input type="file" class="form-control-file mt-4" id="trade_Licence" name="tlp">
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password" required>
+                            <input type="password" class="form-control" id="password" name="password" required>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="confirm-password" class="form-label">Confirm Password</label>
-                            <input type="password" class="form-control" id="confirm-password" required>
+                            <input type="password" class="form-control" id="confirm-password" name="confirm" required>
                         </div>
                     </div>
-
-                    <div class="text-center d-grid me-5 mt-5 ms-5">
-                        <button type="submit" class="btn btn-primary btn-block mb-5 gap-5">Register</button>
+                    <div class="mb-3">
+                        <label for="gender" class="form-label">Gender</label>
+                        <div>
+                            <input type="radio" class="form-check-input" name="gender" id="male" value="male" required>
+                            <label for="male" class="form-check-label">Male</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="form-check-input" name="gender" id="female" value="female"
+                                required>
+                            <label for="female" class="form-check-label">Female</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="form-check-input" name="gender" id="other" value="other"
+                                required>
+                            <label for="other" class="form-check-label">Other</label>
+                        </div>
                     </div>
-                    <!-- Form fields -->
+                    <% if (msg) { %>
+                        <div class="alert alert-danger" role="alert">
+                            <%= msg %>
+                        </div>
+                        <% } %>
+                            <div class="text-center d-grid me-5 mt-5 ms-5">
+                                <button type="submit" class="btn btn-primary btn-block mb-5 gap-5">Register</button>
+                            </div>
+                            <!-- Form fields -->
                 </form>
             </div>
         </div>
     </div>
-    <script src="../js/script.js">
+    <script src="/javascript/regi.js">
 
     </script>
 </body>

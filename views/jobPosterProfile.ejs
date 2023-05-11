@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/postBox.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Profile</title>
+</head>
+
+<body>
+
+    <header>
+        <%- include('../views/header'); %>
+    </header>
+
+    <main>
+        <div class="container-lg mt-4">
+            <div class="row">
+                <!--Div for profile -->
+                <div class="col-md-5 col-lg-4 bg-white">
+                    <div class="m-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex flex-column align-items-center text-center mt-5">
+                                    <img src="/image/img1.jpg" alt="Admin" class="rounded-circle" width="150"
+                                        height="150">
+                                    <div class="mt-3 text-black">
+                                        <h4>Nahid Hasan</h4>
+                                        <p class="mb-1 text-black-50">Full Stack Developer</p>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            Add bio
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Bio</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="mb-3">
+                                                            <textarea class="form-control"
+                                                                id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary">Save
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <table class="table border-white text-black-50">
+                                    <tr>
+                                        <td class="d-inline-block" scope="row"> <i
+                                                class="fa-solid fa-location-dot d-inline-block me-2"></i>From</td>
+                                        <td scope="row">Dhaka</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row " class="d-inline-block"><i
+                                                class="fa-solid fa-user me-2"></i>Member
+                                            since</td>
+                                        <td scope="row">Oct 2020</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <div>
+                                    <h5 class="card-title  ">Description</h5>
+                                    <p class="card-text my-4 text-black-50">Hi, I'm Hashir. A highly skilled Full-Stack
+                                        Developer and
+                                        🏆𝗚𝗼𝗼𝗴𝗹𝗲 𝗖𝗲𝗿𝘁𝗶𝗳𝗶𝗲𝗱 𝗨𝗫 𝗗𝗲𝘀𝗶𝗴𝗻𝗲𝗿. I am currently leading
+                                        a
+                                        talented team of designers and developers at Sitesbuzz. With a proven track
+                                        record
+                                        of
+                                        delivering innovative and user-centered designs, I am committed to driving the
+                                        success
+                                        of our projects and exceeding the expectations of our clients.</p>
+                                </div>
+                                <hr>
+                                <div class="my-4">
+                                    <h5 class="card-title">Linked Accounts</h5>
+                                    <ul class="list-group">
+                                        <li class="list-group-item border-0"><a
+                                                class="text-decoration-none text-black-50" href="#"><i
+                                                    class="fa-brands fa-google me-2"></i>Google</a></li>
+                                        <li class="list-group-item border-0"><a
+                                                class="text-decoration-none text-black-50" href="#"><i
+                                                    class="fa-brands fa-twitter me-2"></i>Twitter</a></li>
+                                        <li class="list-group-item border-0"><a
+                                                class="text-decoration-none text-black-50" href="#"><i
+                                                    class="fa-brands fa-facebook me-2"></i>Facebook</a></li>
+                                        <li class="list-group-item border-0"><a
+                                                class="text-decoration-none text-black-50" href="#"><i
+                                                    class="fa-brands fa-whatsapp me-2"></i>Whatsapp</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- pagination -->
+                <div class="col-md-7 col-lg-8">
+                    <!-- postbox -->
+                    <%- include('../views/postBox'); %>
+
+                        <% for(var i=0;i<data.length;i++){ %>
+                            <div class="card my-4 data-bs-toggle=" modal" data-bs-target="#exampleModal">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center">
+                                        <img src="https://picsum.photos/50/51" class="rounded-circle me-2 mt-0"
+                                            alt="profile picture">
+                                        <div class="text-gray" style="line-height:1em">
+                                            <h5 class="card-title mb-0">Jane Doe</h5>
+                                            <a href="#" class="text-muted d-block text-decoration-none"><small>
+                                                    <%=data[data.length-i-1].category%>
+                                                </small></a>
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <p class="card-subtitle mb-2 mt-1 text-muted d-inline-block">
+                                                <small>
+                                                    <%=data[data.length-i-1].location%>
+                                                </small>
+                                            </p>
+                                            <i class="fa-solid fa-clock"></i>
+                                            <p class="card-subtitle mb-2 text-muted d-inline-block"><small>
+                                                    <%= new Date(data[data.length-i-1].postTime).toLocaleString() %>
+                                                </small></p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="text-decoration-none" style="color:rgba(0, 0, 0, 0.738);"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <div class="mx-3">
+
+                                            <p class="card-text">
+                                                <%=data[data.length-i-1].text%>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <% } %>
+
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item disabled">
+                                            <a class="page-link">Previous</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Next</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                </div>
+            </div>
+    </main>
+
+    <footer>
+        <%- include('../views/footer'); %>
+    </footer>
+
+    <!-- <script src="/javascript/postBox.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

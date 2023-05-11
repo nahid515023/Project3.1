@@ -13,8 +13,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="./test.css">
+    <link rel="stylesheet" href="./css/homePage.css">
     <title>GigLink</title>
 </head>
 
@@ -23,77 +22,6 @@
     <body>
         <!--Main Navigation-->
         <header>
-            <style>
-                #intro {
-                    background-image: url("../img/bg-image-transformed.jpeg");
-                    height: 100vh;
-                    background-position: center;
-                }
-
-                /* Height for devices larger than 576px */
-                @media (min-width: 992px) {
-                    #intro {
-                        margin-top: -58.59px;
-                    }
-                }
-
-                .navbar .nav-link {
-                    color: #fff !important;
-                }
-
-                @media (max-width: 768px) {
-                    .carousel-inner .carousel-item>div {
-                        display: none;
-                    }
-
-                    .carousel-inner .carousel-item>div:first-child {
-                        display: block;
-                    }
-                }
-
-                .carousel-inner .carousel-item.active,
-                .carousel-inner .carousel-item-next,
-                .carousel-inner .carousel-item-prev {
-                    display: flex;
-                }
-
-                /* large - display 6 */
-                @media (min-width: 992px) {
-
-                    .carousel-inner .carousel-item-right.active,
-                    .carousel-inner .carousel-item-next {
-                        transform: translateX(50%);
-                    }
-
-                    .carousel-inner .carousel-item-left.active,
-                    .carousel-inner .carousel-item-prev {
-                        transform: translateX(-50%);
-                    }
-                }
-
-                .carousel-inner .carousel-item-right,
-                .carousel-inner .carousel-item-left {
-                    transform: translateX(0);
-                }
-
-                .movie-img {
-                    height: 200px;
-                    width: 150px;
-                    background-color: aqua;
-                    overflow: hidden;
-                    background-image: url("https://i.hizliresim.com/mX07R4.png");
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    object-fit: fill;
-                }
-
-                .movie-title {
-                    height: 40px;
-                    width: 150px;
-                    background-color: black;
-                    overflow: hidden;
-                }
-            </style>
 
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
@@ -117,11 +45,11 @@
                         <ul class="navbar-nav d-flex flex-row">
                             <!-- Icons -->
                             <li class="nav-item ml-auto">
-                                <a class="btn btn-outline-light btn-sm px-3 mx-2" href="#" target="_blank"
+                                <a class="btn btn-outline-light btn-sm px-3 mx-2" href="/signup"
                                     role="button">Sign UP</a>
                             </li>
                             <li class="nav-item mb-2 me-lg-0 pr-2">
-                                <a class="btn btn-outline-light btn-sm py-1 px-3 mx-2" href="#" target="_blank"
+                                <a class="btn btn-outline-light btn-sm py-1 px-3 mx-2" href="/login"
                                     role="button">Login</a>
                             </li>
                         </ul>
@@ -157,7 +85,7 @@
                     <div class="row">
                         <div class="col-md-6 gx-5 mb-4">
                             <div class="bg-image hover-overlay ripple shadow-2-strong" data-mdb-ripple-color="light">
-                                <img src="../img/refri.jpg" class="img-fluid" />
+                                <img src="../image/refri.jpg" class="img-fluid" />
                                 <a href="#!">
                                     <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                                 </a>
@@ -199,7 +127,7 @@
                                             <div class="card">
                                                 <div class="bg-image hover-overlay ripple"
                                                     data-mdb-ripple-color="light">
-                                                    <img src="../img/mobile_repair.jpg" class="img-fluid" />
+                                                    <img src="../image/mobile_repair.jpg" class="img-fluid" />
                                                     <a href="#!">
                                                         <div class="mask"
                                                             style="background-color: rgba(251, 251, 251, 0.15);"></div>
@@ -222,7 +150,7 @@
                                             <div class="card">
                                                 <div class="bg-image hover-overlay ripple"
                                                     data-mdb-ripple-color="light">
-                                                    <img src="../img/refri.jpg" class="img-fluid" />
+                                                    <img src="../image/refri.jpg" class="img-fluid" />
                                                     <a href="#!">
                                                         <div class="mask"
                                                             style="background-color: rgba(251, 251, 251, 0.15);"></div>
@@ -246,7 +174,7 @@
                                             <div class="card">
                                                 <div class="bg-image hover-overlay ripple"
                                                     data-mdb-ripple-color="light">
-                                                    <img src="../img/mobile_repair.jpg" class="img-fluid" />
+                                                    <img src="../image/mobile_repair.jpg" class="img-fluid" />
                                                     <a href="#!">
                                                         <div class="mask"
                                                             style="background-color: rgba(251, 251, 251, 0.15);"></div>
@@ -269,7 +197,7 @@
                                             <div class="card">
                                                 <div class="bg-image hover-overlay ripple"
                                                     data-mdb-ripple-color="light">
-                                                    <img src="../img/ac_repair.jpg" class="img-fluid" />
+                                                    <img src="../image/ac_repair.jpg" class="img-fluid" />
                                                     <a href="#!">
                                                         <div class="mask"
                                                             style="background-color: rgba(251, 251, 251, 0.15);"></div>
@@ -321,131 +249,131 @@
         </main>
         <!--Main layout-->
 
-  <!-- Footer -->
-  <footer class="text-center text-lg-start bg-dark text-muted">
-    <!-- Section: Social media -->
-    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-        <!-- Left -->
-        <div class="me-5 d-none d-lg-block">
-            <span>Get connected with us on social networks:</span>
-        </div>
-        <!-- Left -->
-
-        <!-- Right -->
-        <div>
-            <a href="" class="me-4 text-reset">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-                <i class="fab fa-google"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="" class="me-4 text-reset">
-                <i class="fab fa-github"></i>
-            </a>
-        </div>
-        <!-- Right -->
-    </section>
-    <!-- Section: Social media -->
-
-    <!-- Section: Links  -->
-    <section class="">
-        <div class="container text-center text-md-start mt-5">
-            <!-- Grid row -->
-            <div class="row mt-3">
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                    <!-- Content -->
-                    <h6 class="text-uppercase fw-bold mb-4">
-                        <i class="fas fa-gem me-3"></i>GigLink
-                    </h6>
-                    <p>
-                        Here you can use rows and columns to organize your footer content. Lorem ipsum
-                        dolor sit amet, consectetur adipisicing elit.
-                    </p>
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-dark text-muted">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>Get connected with us on social networks:</span>
                 </div>
-                <!-- Grid column -->
+                <!-- Left -->
 
-                <!-- Grid column -->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4">
-                        Categories
-                    </h6>
-                    <p>
-                        <a href="#!" class="text-reset text-decoration-none">Angular</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset text-decoration-none">React</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset text-decoration-none">Vue</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset text-decoration-none">Laravel</a>
-                    </p>
+                <!-- Right -->
+                <div>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-github"></i>
+                    </a>
                 </div>
-                <!-- Grid column -->
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
 
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4">
-                        Company
-                    </h6>
-                    <p>
-                        <a href="#!" class="text-reset text-decoration-none">About Us</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset text-decoration-none">Career</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset text-decoration-none">Leadership</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset text-decoration-none">Contact Us</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset text-decoration-none">Trust, Safety & Security</a>
-                    </p>
-                </div>
-                <!-- Grid column -->
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3"></i>GigLink
+                            </h6>
+                            <p>
+                                Here you can use rows and columns to organize your footer content. Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
 
-                <!-- Grid column -->
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                    <p><i class="fas fa-home me-3"></i> Sadarghat, Dhaka, Bangladash</p>
-                    <p>
-                        <i class="fas fa-envelope me-3"></i>
-                        info@example.com
-                    </p>
-                    <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                    <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Categories
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset text-decoration-none">Angular</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset text-decoration-none">React</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset text-decoration-none">Vue</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset text-decoration-none">Laravel</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Company
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset text-decoration-none">About Us</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset text-decoration-none">Career</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset text-decoration-none">Leadership</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset text-decoration-none">Contact Us</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset text-decoration-none">Trust, Safety & Security</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p><i class="fas fa-home me-3"></i> Dhaka, Bangladash</p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                info@example.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
                 </div>
-                <!-- Grid column -->
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2023 Copyright:
+                <a class="text-reset fw-bold text-decoration-none" href="#">GigLink.com</a>
             </div>
-            <!-- Grid row -->
-        </div>
-    </section>
-    <!-- Section: Links  -->
-
-    <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-        © 2023 Copyright:
-        <a class="text-reset fw-bold text-decoration-none" href="#">GigLink.com</a>
-    </div>
-    <!-- Copyright -->
-</footer>
-<!-- Footer -->
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
 
 
 
