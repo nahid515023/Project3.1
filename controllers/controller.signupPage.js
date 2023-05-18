@@ -97,7 +97,7 @@ exports.getPostData2 = (req, res) => {
                     console.log(err);
                 }
             });
-            return res.redirect('/login');
+            return res.redirect('/jobPosterProfile');
         }
     });
 }
